@@ -27,7 +27,7 @@ public class App
     	
     System.out.println("Script Started");	
        //initializing the web driver
-   // System.setProperty("webdriver.chrome.driver", "/Users/DURGA PRASAD/desktop/devops/softwares/chrome-driver/chromedriver");
+   //System.setProperty("webdriver.chrome.driver", "C:\\Users\\DURGA PRASAD\\Desktop\\devops\\softwares\\chromedriver-win64\\chromedriver2\\chromedriver.exe");
     WebDriverManager.chromedriver().setup();
     //setting properties
     ChromeOptions chromeOptions = new ChromeOptions();
@@ -65,25 +65,25 @@ public class App
     System.out.println("test scripts executed");
     
     TakesScreenshot scrShot = ((TakesScreenshot)driver);
-    
+    System.out.println("Taking Screeshot");
     File srcFile = scrShot.getScreenshotAs(OutputType.FILE);
     
-  //  File destFile = new File("/Users/shubham/Documents/test-reports.jpg");
+  //  File destFile = new File("/user/durga prasad/desktop/test-reports.jpg");
     File destFile = new File("/var/lib/jenkins/workspace/insure-me-test-scripts/test-reports.jpg");
     
     
     FileUtils.copyFile(srcFile, destFile);
     
     Thread.sleep(1000);
-    
+    System.out.println("test-reported generated");
  
    
     driver.quit();
+   System.out.println("Test Case execution completed"); 
     
-    
     	
     	
     	
-        System.out.println( "Hello World!" );
+     
     }
 }
