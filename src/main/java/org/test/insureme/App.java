@@ -43,16 +43,20 @@ public class App
     System.out.println("Enter details in the form");
     //enter details
     //input name
-    driver.findElement(By.id("inputName")).sendKeys("prasad");
+   driver.findElement(By.name("your_name")).sendKeys("Prasad");
     Thread.sleep(1000);
-    driver.findElement(By.id("inputNumber")).sendKeys("999999999");
-    Thread.sleep(1000);
-    driver.findElement(By.id("inputMail")).sendKeys("prasad@xyz.com");
-    Thread.sleep(1000);
-    driver.findElement(By.id("inputMessage")).sendKeys("Hi, welcome to the DevOps family");
+      driver.findElement(By.name("phone_number")).sendKeys("9999999999");
     Thread.sleep(1000);
     
+    driver.findElement(By.name("email_address")).sendKeys("prasad@xyz.com");
+    Thread.sleep(1000);
+    
+    driver.findElement(By.name("your_message")).sendKeys("hello from prasad");
+    Thread.sleep(1000);
+
     driver.findElement(By.id("my-button")).click();
+    Thread.sleep(1000);
+    
     
     String response = driver.findElement(By.id("response")).getText();
    
