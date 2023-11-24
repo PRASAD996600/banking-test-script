@@ -27,7 +27,7 @@ public class App
     	
     System.out.println("Script Started");	
        //initializing the web driver
-   // System.setProperty("webdriver.chrome.driver", "/Users/shubham/Documents/softwares/chrome-driver/chromedriver");
+   // System.setProperty("webdriver.chrome.driver", "/Users/DURGA PRASAD/desktop/devops/softwares/chrome-driver/chromedriver");
     WebDriverManager.chromedriver().setup();
     //setting properties
     ChromeOptions chromeOptions = new ChromeOptions();
@@ -35,7 +35,7 @@ public class App
     // open url
     System.out.println("Driver opening up the url in browser");	
     WebDriver driver = new ChromeDriver(chromeOptions);
-    driver.get("http://3.84.90.60:8081/contact.html");	
+    driver.get("http://34.227.99.99:8081/contact.html");	
     
     //invole implicit waits to load the page
     driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
@@ -43,13 +43,13 @@ public class App
     System.out.println("Enter details in the form");
     //enter details
     //input name
-    driver.findElement(By.id("inputName")).sendKeys("Sam");
+    driver.findElement(By.id("inputName")).sendKeys("prasad");
     Thread.sleep(1000);
     driver.findElement(By.id("inputNumber")).sendKeys("999999999");
     Thread.sleep(1000);
-    driver.findElement(By.id("inputMail")).sendKeys("sam@xyz.com");
+    driver.findElement(By.id("inputMail")).sendKeys("prasad@xyz.com");
     Thread.sleep(1000);
-    driver.findElement(By.id("inputMessage")).sendKeys("Hi, I am interested in insurance");
+    driver.findElement(By.id("inputMessage")).sendKeys("Hi, welcome to the DevOps family");
     Thread.sleep(1000);
     
     driver.findElement(By.id("my-button")).click();
