@@ -1,4 +1,4 @@
-package org.test.insureme;
+package org.test.banking;
 
 import static org.junit.Assert.assertTrue;
 

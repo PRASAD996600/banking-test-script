@@ -3,7 +3,7 @@
 
    <test name = "testng example">
       <classes>
-         <class name = "org.test.insureme.AppTest" />
+         <class name = "org.test.banking.App" />
       </classes>
    </test>
 </suite>
