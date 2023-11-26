@@ -41,9 +41,9 @@ public class App
     System.out.println("Enter details in the form");
     //enter details
     //input name
-   driver.findElement(By.name("Name")).sendKeys("Prasad");
+    driver.findElement(By.name("Name")).sendKeys("Prasad");
     Thread.sleep(1000);
-      driver.findElement(By.name("Phone Number")).sendKeys("9999999999");
+    driver.findElement(By.name("Phone Number")).sendKeys("9999999999");
     Thread.sleep(1000);
     
     driver.findElement(By.name("Email")).sendKeys("prasad@xyz.com");
